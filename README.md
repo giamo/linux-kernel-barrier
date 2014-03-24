@@ -7,3 +7,5 @@ Installation
 ------------
 
 Copy the barrier/ folder within the kernel source code and compile it.
+
+See the test client for how to use the new system calls once the kernel is in use.
