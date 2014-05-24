@@ -13,7 +13,7 @@ See the test client for how to use the new system calls once the kernel is in us
 System calls
 ------------
 
-_int sys\_get\_barrier (key\_t key, int flags)_: installs a new barrier with specified flags and returns its barrier descriptor
-_int sys\_release\_barrier (int bd)_: uninstalls the barrier with the given descriptor
-_int sys\_sleep\_on\_barrier (int bd, int tag)_: puts the calling process to sleep on a barrier on the given tag (level)
-_int sys\_awake\_barrier (int bd, int tag)_: awakes all processing sleeping on the barrier on the given tag (level)
+- `int sys_get_barrier (key_t key, int flags)`: installs a new barrier with specified flags and returns its barrier descriptor
+- `int sys_release_barrier (int bd)`: uninstalls the barrier with the given descriptor
+- `int sys_sleep_on_barrier (int bd, int tag)`: puts the calling process to sleep on a barrier on the given tag (level)
+- `int sys_awake_barrier (int bd, int tag)`: awakes all processing sleeping on the barrier on the given tag (level)
